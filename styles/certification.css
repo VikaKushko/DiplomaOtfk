@@ -1,0 +1,87 @@
+/* Общие стили */
+body {
+    font-family: 'Inria Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+
+}
+/* Стили для шапки */
+header {
+    background-image: url('../assets/images/photoSlider.png');
+    background-size: cover;
+    color: #fff;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+}
+/*Логотип и заголовок страницы */
+.logo {
+    margin: 1rem ;
+    width: 223px;
+    height: auto;
+}
+.header-title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 57.55px;
+    letter-spacing: 5%;
+    text-align: center;
+    color: #fff;
+}
+.menu{
+    text-decoration: none;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 20px 30px;
+    background-color: #FFFAFA;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 50px;
+    font-size: 16px;
+}
+/* Стили для основного контента */
+section {
+    background-color: #FFFAFA;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    margin: 2rem;
+    font-size: 20px;
+}
+/*Кнопка аккардіон*/
+.accordion {
+    background-color: #DEB887;
+    padding: 1rem 1rem 1rem 2rem;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+.accordion-hidden{
+    display: none;
+    overflow: hidden;
+}
+/*Зображення дорожної карти*/
+.road-map img {
+    display: block;
+    margin: 2rem auto 2rem auto;
+    width: 1300px;
+    height: auto;
+}
+
+/*Посилання на положення, заокни*/
+.list {
+    padding: 0;
+}
+.list a{
+    display: flex;
+    padding: 10px 32px 10px 32px;
+    color: #000;
+    font-weight: bold;
+}

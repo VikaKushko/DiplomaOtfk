@@ -1,0 +1,86 @@
+/* Общие стили */
+body {
+    font-family: 'Inria Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+
+}
+/* Стили для шапки */
+header {
+    background-image: url('../assets/images/photoSlider.png');
+    background-size: cover;
+    color: #fff;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+}
+/*Логотип и заголовок страницы */
+.logo {
+    margin: 1rem ;
+    width: 223px;
+    height: auto;
+}
+.header-title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 57.55px;
+    letter-spacing: 5%;
+    text-align: center;
+    color: #fff;
+}
+.menu{
+    text-decoration: none;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 20px 30px;
+    background-color: #FFFAFA;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 50px;
+    font-size: 16px;
+}
+/* Стили для основного контента */
+section {
+    background-color: #FFFAFA;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    margin: 2rem;
+    font-size: 20px;
+}
+/*Члени методичної ради*/
+.card-wrapper {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.photo-frame {
+    background-color: #d8c4ae;
+    padding: 10px;
+    border-radius: 20px;
+    display: inline-block;
+}
+.photo-inner {
+    background-color: #f3f1ea;
+    padding: 15px;
+    border-radius: 15px;
+}
+.photo-inner img {
+    border-radius: 15px;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+.caption {
+    margin-top: 16px;
+    background-color: white;
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+}

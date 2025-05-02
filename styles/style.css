@@ -1,0 +1,146 @@
+/* Общие стили */
+body {
+    font-family: 'Inria Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+
+}
+/* Стили для шапки */
+header {
+    background-image: url('../assets/images/photoSlider.png');
+    background-size: cover;
+    color: #fff;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+}
+ /*Логотип и заголовок страницы */
+.logo {
+    margin: 1rem ;
+    width: 223px;
+    height: auto;
+}
+.header-title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 57.55px;
+    letter-spacing: 5%;
+    text-align: center;
+    color: #fff;
+}
+.menu{
+    text-decoration: none;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 20px 30px;
+    background-color: #FFFAFA;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 50px;
+    font-size: 16px;
+}
+/* Стили для основного контента */
+section {
+    margin-bottom: 2rem;
+    background-color: #FFFAFA;
+    padding: 2rem;
+}
+/*Раздел с основними напрямками методичної роботи*/
+.home {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    background: #DEB887;
+    margin: 0;
+    font-size: 20px;
+}
+.link {
+    padding: 10px 100px;
+    text-decoration: none;
+    color: #000;
+    border: 2px solid #000;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.link:hover {
+    background-color: #D2B48C;
+    color: #000;
+}
+/*Розділ з додатковими освітніми ініціативами*/
+.home2 {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    font-size: 20px;
+
+}
+/*Описова секція про методичний кабінет*/
+.about{
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 2rem;
+    font-size: 20px;
+    text-align: justify;
+
+}
+/*Розділ з документами для завантаження */
+.list {
+    padding: 0;
+}
+.list a{
+    display: flex;
+    padding: 5px 32px 5px 32px;
+    background: #DEB887;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+}
+/*Розділ контактною информацією */
+.wrapper {
+    background: #f4f4f4;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.left-block {
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    max-width: 500px;
+}
+
+.left-block img {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+.contact {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+}
+.right-block h2 {
+    font-size: 22px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.vsp-logo img {
+    width: 500px;
+    height: auto;
+}
+
+
+
+
+
