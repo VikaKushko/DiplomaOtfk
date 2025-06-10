@@ -9,16 +9,17 @@ body {
 }
 /* Стили для шапки */
 header {
-    background-image: url('../assets/images/photoSlider.png');
+    background-image: url('../assets/images/photoSlider(1).png');
     background-size: cover;
     color: #fff;
     background-position: center;
     width: 100%;
     height: 500px;
+    transition: background-image 1s ease-in-out;
+    position: relative;
 }
 /*Логотип и заголовок страницы */
 .logo {
-    margin: 1rem ;
     width: 223px;
     height: auto;
 }
@@ -29,17 +30,18 @@ header {
     letter-spacing: 5%;
     text-align: center;
     color: #fff;
+    margin-top: 7%;
 }
 .menu{
     text-decoration: none;
     position: absolute;
     right: 20px;
     top: 20px;
-    padding: 20px 30px;
+    padding: 10px 20px;
     background-color: #FFFAFA;
     color: #000;
     border: 1px solid #000;
-    border-radius: 50px;
+    border-radius: 10px;
     font-size: 16px;
 }
 /* Стили для основного контента */
@@ -51,4 +53,102 @@ section {
     text-align: justify;
     margin: 2rem;
     font-size: 20px;
+    font-style: italic;
+}
+
+/*Конкурс методичних розробок*/
+.methodological-development-competition p{
+    text-align: center;
+}
+.methodological-development-competition div{
+    display: flex;
+    justify-content: space-between;
+}
+.methodological-development-competition ul{
+    list-style-type: none;
+}
+
+/*Конкурс кабінетів*/
+.office-competition p{
+    text-align: center;
+}
+.office-competition li:nth-child(3n){
+    margin-bottom: 20px;
+}
+.office-competition ul{
+    list-style-type: none;
+}
+
+/* ===================== Адаптивная верстка ===================== */
+
+/* Планшеты: до 1024px */
+@media (max-width: 1024px) {
+    .header-title {
+        font-size: 36px;
+        line-height: 44px;
+        margin-top: 10%;
+    }
+
+    .logo {
+        width: 180px;
+    }
+
+    .menu {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    section {
+        font-size: 18px;
+        margin: 1rem;
+    }
+
+    .methodological-development-competition div {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .office-competition li:nth-child(3n) {
+        margin-bottom: 15px;
+    }
+}
+
+/* Смартфоны: до 600px */
+@media (max-width: 600px) {
+    header {
+        height: 300px;
+    }
+
+    .header-title {
+        font-size: 26px;
+        line-height: 32px;
+        margin-top: 12%;
+        padding: 0 10px;
+    }
+
+    .logo {
+        width: 140px;
+    }
+
+    .menu {
+        font-size: 12px;
+        padding: 6px 12px;
+        right: 10px;
+        top: 10px;
+    }
+
+    section {
+        font-size: 16px;
+        margin: 0.5rem;
+        padding: 0.8rem;
+    }
+
+    .methodological-development-competition div {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .office-competition li:nth-child(3n) {
+        margin-bottom: 10px;
+    }
 }

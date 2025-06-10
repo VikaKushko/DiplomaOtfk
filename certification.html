@@ -22,7 +22,7 @@
     </section>
 
 <!--    Кнопка аккардіон 1-->
-    <button class="accordion">Ключові положення про атестацію педагогічних працівників ФПО відповідно до Наказу №805 від 09.09.2022:</button>
+    <button class="accordion" aria-expanded="false" onclick="toggleAccordion(this)">Ключові положення про атестацію педагогічних працівників ФПО відповідно до Наказу №805 від 09.09.2022:<span class="arrow">▲</span></button>
     <section class="accordion-hidden">
         <ol>
             <li><strong>Перехідні положення:</strong>
@@ -98,7 +98,7 @@
     </section>
 
     <!--    Кнопка аккардіон 2-->
-    <button class="accordion">Строки роботи з документами:</button>
+    <button class="accordion" aria-expanded="false" onclick="toggleAccordion(this)" >Строки роботи з документами:<span class="arrow">▲</span></button>
     <section class="accordion-hidden">
         <ol>
             <li><strong>Оприлюднення інформації:</strong>
@@ -121,12 +121,12 @@
     </section>
 
     <!--    Кнопка аккардіон 3-->
-    <button class="accordion">Особливі умови:</button>
+    <button class="accordion" aria-expanded="false" onclick="toggleAccordion(this)">Особливі умови:<span class="arrow">▲</span></button>
     <section class="accordion-hidden">
         <ol>
             <li><strong>Перенесення строків:</strong>
                 <ul>
-                    <li>Атестацію можуть перенести на строк не більше 1 року у разі тимчасової непрацездатності працівника або інших обставин, що заважають її проведенню.</li>
+                    <li>Атестацію можуть перенести на строк не більше 1 року у разі тимчасової непрацездатності працівника або інших обставин, що заважають її проведенню.</li>
                 </ul>
             </li>
             <li><strong>Робота в умовах надзвичайних обставин:</strong>
@@ -144,27 +144,24 @@
 
 <!--    Посилання на положення, заокни-->
     <section class="list">
-        <a href="">Наказ МОН від 09.09.2022 р. № 805 “Про затвердження Положення про атестацію педагогічних працівників”. Положення про атестацію педагогічних працівників.</a>
-        <a href="">Наказ МОН № 1277 від  10.09.2024 “Про внесення змін до положення про атестаціюпедагогічних працівників”</a>
-        <a href="">П О С Т А Н О В А від 14 червня 2000 р. N 963</a>
-        <a href="">“Про затвердження переліку кваліфікаційних категорій і педагогічних звань педагогічних працівників та порядку їх присвоєння”</a>
-        <a href="">Закон України "Про освіту", витяг (про атестацію)</a>
-        <a href="">Закон України "Про освіту"</a>
-        <a href="">Закон Україн Про фахову передвищу освіту</a>
-        <a href="">Закон України "Про професійний розвиток працівників"</a>
-        <a href="">Положення “Про атестацію педагогічних працівників ВСП ХФК ПДАУ від 09.09.2023 р.</a>
-        <a href="">Наказ про створення атестаційної комісії ПДАУ 2 рівня на 2023-2024 н.р.</a>
-        <a href="">Наказ про створення атестаційної комісії коледжу  1 рівня на 2024-2025 р.</a>
-        <a href="">Графік роботи атестаційної комісії 2024-2025 р.</a>
-        <a href="">Графік засідань атестаційної комісії 2024-2025 р.</a>
-        <a href="">Списки педагогічних працівників чергової атестації 2025 р.</a>
-        <a href="">Строки проведення атестації</a>
-        <a href="">Наказ про результати атестації ПП у 2023/2024 році</a>
-        <a href="">Перспективний план атестаціїї ПП</a>
-        <a href="">Атестація і підвищення кваліфікації ПП</a>
+        <a href="https://docs.google.com/document/d/14zXY6HcQipzti6-aKiz-8V1-DAI-R-iq/edit?tab=t.0#bookmark=id.gjdgxs">Наказ МОН від 09.09.2022 р. № 805 “Про затвердження Положення про атестацію педагогічних працівників”. Положення про атестацію педагогічних працівників.</a>
+        <a href="https://ips.ligazakon.net/document/RE42979?an=98">Наказ МОН № 1277 від  10.09.2024 “Про внесення змін до положення про атестаціюпедагогічних працівників”</a>
+        <a href="https://zakon.rada.gov.ua/laws/show/963-2000-%D0%BF#Text">П О С Т А Н О В А від 14 червня 2000 р. N 963</a>
+        <a href="https://www.kmu.gov.ua/npas/248739889">“Про затвердження переліку кваліфікаційних категорій і педагогічних звань педагогічних працівників та порядку їх присвоєння”</a>
+        <a href="https://drive.google.com/file/d/1QdMw-hplbbvCZso8Ee-YxI9RCT952GR_/view">Закон України "Про освіту", витяг (про атестацію)</a>
+        <a href="https://zakon.rada.gov.ua/laws/show/2145-19#Text">Закон України "Про освіту"</a>
+        <a href="https://zakon.rada.gov.ua/laws/show/2745-19#Text">Закон Україн Про фахову передвищу освіту</a>
+        <a href="https://zakon.rada.gov.ua/laws/show/4312-17#Text">Закон України "Про професійний розвиток працівників"</a>
+        <a href="./assets/files/сertification/Regulations-certification-teaching-staff-Highe-Educational-Service-ONTU.pdf">Положення “Про атестацію педагогічних працівників ВСП “ОТФК ОНТУ” від 02.12.2024 р.</a>
+        <a href="./assets/files/сertification/Order-creation-certification-commission-Higher-Educational-Service-ONTU-2024-2025%20N.R..pdf">Наказ про створення атестаційної комісії ВСП “ОТФК ОНТУ” 2024-2025н.р.</a>
+        <a href="./assets/files/сertification/Schedul-Meetings-Certification-Commission.pdf">Графік проведення засідання атестаційної комісії.</a>
+        <a href="./assets/files/сertification/LIST-EMPLOYEES-SUBJECT-CERTIFICATION-2025.pdf">Список педпрацівників , які підлягають атестації у 2025р.</a>
+        <a href="./assets/files/сertification/Order-creation-conduct-next-certification-teaching-staff-Higher-Educational-Service-ONTU-2025..pdf">Наказ  “Про організацію та проведення чкргвої атестації педгогічних працівників ВСП “ОТФК ОНТУ” у 2025р.</a>
+        <a href="./assets/files/сertification/Order-results-certification-pedagogical-workers-Higher-Educational-Service-ONTU.pdf">Наказ “Про підсумки атестації педагогічих праціників ВСП “ОТФК ОНТУ” </a>
     </section>
 </main>
 
+<script src="./javaScript/slider-menu.js"></script>
 <script src="./javaScript/certification.js"></script>
 </body>
 </html>

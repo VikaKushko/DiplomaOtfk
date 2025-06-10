@@ -9,16 +9,17 @@ body {
 }
 /* Стили для шапки */
 header {
-    background-image: url('../assets/images/photoSlider.png');
+    background-image: url('../assets/images/photoSlider(1).png');
     background-size: cover;
     color: #fff;
     background-position: center;
     width: 100%;
     height: 500px;
+    transition: background-image 1s ease-in-out;
+    position: relative;
 }
 /*Логотип и заголовок страницы */
 .logo {
-    margin: 1rem ;
     width: 223px;
     height: auto;
 }
@@ -29,17 +30,18 @@ header {
     letter-spacing: 5%;
     text-align: center;
     color: #fff;
+    margin-top: 7%;
 }
 .menu{
     text-decoration: none;
     position: absolute;
     right: 20px;
     top: 20px;
-    padding: 20px 30px;
+    padding: 10px 20px;
     background-color: #FFFAFA;
     color: #000;
     border: 1px solid #000;
-    border-radius: 50px;
+    border-radius: 10px;
     font-size: 16px;
 }
 /* Стили для основного контента */
@@ -81,16 +83,30 @@ section {
     font-size: 20px;
     font-weight: bold;
 }
-
-/*Зображення творчіх слов*/
-.photo-art img {
-    display: block;
-    margin: 2rem auto 2rem auto;
+.slider {
+    position: relative;
     width: 1000px;
-    height: auto;
+    height: 500px;
+    overflow: hidden;
+    margin: 2rem auto 2rem auto;
+
 }
 
-/*Види занять*/
+.slider img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slider img.active {
+    opacity: 1;
+}
+
+/*Методичні рекомендації молодому викладачу */
 .types-class {
     padding: 0;
     margin: 0;
@@ -116,7 +132,7 @@ section {
 /*Навчально методичний комплекс*/
 .method-complex {
     padding: 0;
-    margin: 0;
+    margin: 0 0 10% 0;
 }
 .method-complex a{
     display: flex;
@@ -128,19 +144,128 @@ section {
     font-weight: bold;
 }
 
-/*Мотоди навчання*/
-.teach-method {
-    display: flex;
-    justify-content: space-around;
-    background: #DEB887;
-    padding: 0 50px;
-    margin: 0 0 100px 0;
+/* ======= Адаптивная верстка ======= */
+
+@media (max-width: 1024px) {
+    .header-title {
+        font-size: 36px;
+        margin-top: 10%;
+    }
+
+    .menu {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    section {
+        margin: 1rem;
+        font-size: 18px;
+    }
+
+    .slider {
+        width: 90%;
+        height: auto;
+    }
+
+    .art-people img {
+        width: 90%;
+    }
+
+    .link-plan-school {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        gap: 1rem;
+    }
 }
-.teach-method a{
-    padding: 10px 32px 7px 32px;
-    color: #000;
-    font-size: 20px;
-    font-weight: bold;
+
+@media (max-width: 768px) {
+    header {
+        height: 300px;
+    }
+
+    .header-title {
+        font-size: 28px;
+        margin-top: 15%;
+    }
+
+    .logo {
+        width: 160px;
+    }
+
+    .menu {
+        top: 10px;
+        right: 10px;
+        font-size: 13px;
+        padding: 6px 12px;
+    }
+
+    .link-plan-work a,
+    .types-class a,
+    .method-complex a {
+        font-size: 18px;
+        padding: 10px 20px;
+        text-align: center;
+    }
+
+    .link-plan-school a {
+        font-size: 18px;
+    }
+
+    .slider {
+        width: 100%;
+        height: auto;
+    }
+
+    .art-people img {
+        width: 100%;
+    }
+
+    section {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-title {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    .menu {
+        font-size: 12px;
+        padding: 4px 10px;
+    }
+
+    section {
+        margin: 1rem 0.5rem;
+        font-size: 14px;
+    }
+
+    .link-plan-work a,
+    .types-class a,
+    .method-complex a,
+    .link-plan-school a {
+        font-size: 16px;
+        padding: 0.8rem;
+    }
+
+    .slider {
+        height: auto;
+    }
+
+    .slider img {
+        height: auto;
+    }
+
+    .art-people img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 

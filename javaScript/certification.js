@@ -12,3 +12,9 @@ for (let i = 0; i < acc.length; i++) {
         }
     });
 }
+
+function toggleAccordion(btn) {
+    const expanded = btn.getAttribute("aria-expanded") === "true";
+    btn.setAttribute("aria-expanded", !expanded);
+    btn.nextElementSibling.hidden = expanded;
+}

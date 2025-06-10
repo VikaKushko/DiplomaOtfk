@@ -9,16 +9,17 @@ body {
 }
 /* Стили для шапки */
 header {
-    background-image: url('../assets/images/photoSlider.png');
+    background-image: url('../assets/images/photoSlider(1).png');
     background-size: cover;
     color: #fff;
     background-position: center;
     width: 100%;
     height: 500px;
+    transition: background-image 1s ease-in-out;
+    position: relative;
 }
 /*Логотип и заголовок страницы */
 .logo {
-    margin: 1rem ;
     width: 223px;
     height: auto;
 }
@@ -29,17 +30,18 @@ header {
     letter-spacing: 5%;
     text-align: center;
     color: #fff;
+    margin-top: 7%;
 }
 .menu{
     text-decoration: none;
     position: absolute;
     right: 20px;
     top: 20px;
-    padding: 20px 30px;
+    padding: 10px 20px;
     background-color: #FFFAFA;
     color: #000;
     border: 1px solid #000;
-    border-radius: 50px;
+    border-radius: 10px;
     font-size: 16px;
 }
 /* Стили для основного контента */
@@ -80,4 +82,87 @@ section {
     color: #000;
     font-size: 20px;
     font-weight: bold;
+}
+
+/* ================= Адаптивная верстка ================= */
+
+@media (max-width: 1024px) {
+    .header-title {
+        font-size: 36px;
+        margin-top: 10%;
+    }
+
+    .menu {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    section {
+        margin: 1rem;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 300px;
+    }
+
+    .header-title {
+        font-size: 28px;
+        margin-top: 15%;
+    }
+
+    .logo {
+        width: 160px;
+    }
+
+    .menu {
+        top: 10px;
+        right: 10px;
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    .designation p,
+    .condition a {
+        font-size: 16px;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .condition a {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-title {
+        font-size: 20px;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    .menu {
+        font-size: 12px;
+        padding: 4px 10px;
+    }
+
+    section {
+        margin: 1rem 0.5rem;
+        font-size: 14px;
+    }
+
+    .designation p,
+    .condition a {
+        font-size: 14px;
+        padding: 0.8rem;
+    }
 }

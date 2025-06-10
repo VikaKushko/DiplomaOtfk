@@ -7,18 +7,22 @@ body {
     background-color: #f4f4f4;
 
 }
+/*/////////////////*/
+
+/*/////////////////*/
 /* Стили для шапки */
 header {
-    background-image: url('../assets/images/photoSlider.png');
+    background-image: url('../assets/images/photoSlider(1).png');
     background-size: cover;
     color: #fff;
     background-position: center;
     width: 100%;
     height: 500px;
+    transition: background-image 1s ease-in-out;
+    position: relative;
 }
  /*Логотип и заголовок страницы */
 .logo {
-    margin: 1rem ;
     width: 223px;
     height: auto;
 }
@@ -29,17 +33,18 @@ header {
     letter-spacing: 5%;
     text-align: center;
     color: #fff;
+    margin-top: 5%;
 }
 .menu{
     text-decoration: none;
     position: absolute;
     right: 20px;
     top: 20px;
-    padding: 20px 30px;
+    padding: 10px 20px;
     background-color: #FFFAFA;
     color: #000;
     border: 1px solid #000;
-    border-radius: 50px;
+    border-radius: 10px;
     font-size: 16px;
 }
 /* Стили для основного контента */
@@ -139,6 +144,105 @@ section {
     width: 500px;
     height: auto;
 }
+
+/* Для экранов шириной до 1024px — планшеты */
+@media (max-width: 1024px) {
+    header {
+        height: 400px; /* чуть поменьше высота */
+    }
+
+    .header-title {
+        font-size: 36px;
+        line-height: 44px;
+        margin-top: 10%;
+        padding: 0 10px;
+    }
+
+    .logo {
+        width: 180px;
+    }
+
+    .menu {
+        font-size: 14px;
+        padding: 8px 16px;
+        right: 15px;
+        top: 15px;
+    }
+
+    .home, .home2 {
+        flex-direction: column;
+        gap: 15px;
+        font-size: 18px;
+    }
+
+    .link {
+        padding: 10px 50px;
+    }
+
+    .left-block {
+        max-width: 100%;
+        padding: 15px 20px;
+    }
+
+    .left-block img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .vsp-logo img {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+/* Для экранов до 600px — телефоны */
+@media (max-width: 600px) {
+    header {
+        height: 300px;
+    }
+
+    .header-title {
+        font-size: 28px;
+        line-height: 34px;
+        margin-top: 15%;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    .menu {
+        font-size: 12px;
+        padding: 6px 12px;
+        right: 10px;
+        top: 10px;
+    }
+
+    .home, .home2 {
+        flex-direction: column;
+        gap: 12px;
+        font-size: 16px;
+    }
+
+    .link {
+        padding: 8px 30px;
+    }
+
+    .left-block {
+        padding: 10px 15px;
+    }
+
+    .left-block img {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .vsp-logo img {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
 
 
 

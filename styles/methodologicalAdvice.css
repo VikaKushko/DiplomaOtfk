@@ -9,16 +9,17 @@ body {
 }
 /* Стили для шапки */
 header {
-    background-image: url('../assets/images/photoSlider.png');
+    background-image: url('../assets/images/photoSlider(1).png');
     background-size: cover;
     color: #fff;
     background-position: center;
     width: 100%;
     height: 500px;
+    transition: background-image 1s ease-in-out;
+    position: relative;
 }
 /*Логотип и заголовок страницы */
 .logo {
-    margin: 1rem ;
     width: 223px;
     height: auto;
 }
@@ -29,17 +30,18 @@ header {
     letter-spacing: 5%;
     text-align: center;
     color: #fff;
+    margin-top: 7%;
 }
 .menu{
     text-decoration: none;
     position: absolute;
     right: 20px;
     top: 20px;
-    padding: 20px 30px;
+    padding: 10px 20px;
     background-color: #FFFAFA;
     color: #000;
     border: 1px solid #000;
-    border-radius: 50px;
+    border-radius: 10px;
     font-size: 16px;
 }
 /* Стили для основного контента */
@@ -83,4 +85,42 @@ section {
     font-size: 18px;
     font-weight: 600;
     color: #000;
+}
+
+/* ===================== Адаптивная верстка для карточек ===================== */
+
+/* Планшеты */
+@media (max-width: 1024px) {
+    .caption {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .photo-inner img {
+        max-width: 160px;
+    }
+}
+
+/* Смартфоны */
+@media (max-width: 600px) {
+    .card-wrapper {
+        margin-bottom: 20px;
+    }
+
+    .caption {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .photo-inner {
+        padding: 10px;
+    }
+
+    .photo-inner img {
+        max-width: 130px;
+    }
+
+    .photo-frame {
+        padding: 8px;
+    }
 }

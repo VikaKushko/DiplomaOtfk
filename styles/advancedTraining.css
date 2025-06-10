@@ -9,16 +9,17 @@ body {
 }
 /* Стили для шапки */
 header {
-    background-image: url('../assets/images/photoSlider.png');
+    background-image: url('../assets/images/photoSlider(1).png');
     background-size: cover;
     color: #fff;
     background-position: center;
     width: 100%;
     height: 500px;
+    transition: background-image 1s ease-in-out;
+    position: relative;
 }
 /*Логотип и заголовок страницы */
 .logo {
-    margin: 1rem ;
     width: 223px;
     height: auto;
 }
@@ -29,17 +30,18 @@ header {
     letter-spacing: 5%;
     text-align: center;
     color: #fff;
+    margin-top: 10%;
 }
 .menu{
     text-decoration: none;
     position: absolute;
     right: 20px;
     top: 20px;
-    padding: 20px 30px;
+    padding: 10px 20px;
     background-color: #FFFAFA;
     color: #000;
     border: 1px solid #000;
-    border-radius: 50px;
+    border-radius: 10px;
     font-size: 16px;
 }
 /* Стили для основного контента */
@@ -90,4 +92,78 @@ section {
     color: #000;
     font-size: 20px;
     font-weight: bold;
+}
+
+/* ===================== Адаптивная верстка ===================== */
+
+/* Планшеты — ширина до 1024px */
+@media (max-width: 1024px) {
+    header {
+        height: 400px;
+    }
+
+    .header-title {
+        font-size: 36px;
+        line-height: 44px;
+        margin-top: 8%;
+        padding: 0 10px;
+    }
+
+    .logo {
+        width: 180px;
+    }
+
+    .menu {
+        font-size: 14px;
+        padding: 8px 16px;
+        right: 15px;
+        top: 15px;
+    }
+
+    section, .attestation-info {
+        font-size: 18px;
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+
+    .list-one a, .list-two a {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+}
+
+/* Смартфоны — ширина до 600px */
+@media (max-width: 600px) {
+    header {
+        height: 300px;
+    }
+
+    .header-title {
+        font-size: 28px;
+        line-height: 34px;
+        margin-top: 12%;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    .menu {
+        font-size: 12px;
+        padding: 6px 12px;
+        right: 10px;
+        top: 10px;
+    }
+
+    section, .attestation-info {
+        font-size: 16px;
+        padding: 1rem;
+        margin: 0.5rem;
+    }
+
+    .list-one a, .list-two a {
+        font-size: 16px;
+        padding: 8px 16px;
+        flex-direction: column; /* если текст не помещается по ширине */
+    }
 }
