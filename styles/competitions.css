@@ -67,8 +67,11 @@ section {
 .methodological-development-competition ul{
     list-style-type: none;
 }
+.methodological-development-competition li a{
+    color: black;
+}
 
-/*Конкурс кабінетів*/
+/*competition*/
 .office-competition p{
     text-align: center;
 }
@@ -77,6 +80,10 @@ section {
 }
 .office-competition ul{
     list-style-type: none;
+    color: black;
+}
+.office-competition li a{
+    color: black;
 }
 
 /* ===================== Адаптивная верстка ===================== */
